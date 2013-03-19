@@ -69,11 +69,11 @@ function os2web_contact_views_default_views() {
   $handler->display->display_options['fields']['field_os2web_contact_field_dept']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_os2web_contact_field_dept']['element_default_classes'] = FALSE;
   /* Felt: Indhold: Sted Adresse */
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['id'] = 'field_os2web_contact_field_addres';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['table'] = 'field_data_field_os2web_contact_field_addres';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['field'] = 'field_os2web_contact_field_addres';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['label'] = '';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['id'] = 'field_os2web_contact_field_addr';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['table'] = 'field_data_field_os2web_contact_field_addr';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['field'] = 'field_os2web_contact_field_addr';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['label'] = '';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['element_label_colon'] = FALSE;
   /* Felt: Indhold: Sted Postnr */
   $handler->display->display_options['fields']['field_os2web_contact_field_zip']['id'] = 'field_os2web_contact_field_zip';
   $handler->display->display_options['fields']['field_os2web_contact_field_zip']['table'] = 'field_data_field_os2web_contact_field_zip';
@@ -311,7 +311,7 @@ function os2web_contact_views_default_views() {
     'edit_node' => 'edit_node',
     'title' => 0,
     'field_os2web_contact_field_dept' => 0,
-    'field_os2web_contact_field_addres' => 0,
+    'field_os2web_contact_field_addr' => 0,
     'field_os2web_contact_field_zip' => 0,
     'field_os2web_contact_field_info' => 0,
     'field_os2web_contact_field_email' => 0,
@@ -401,11 +401,11 @@ return os2web_contact_get_block();
   $handler->display->display_options['fields']['field_os2web_contact_field_dept']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_os2web_contact_field_dept']['element_default_classes'] = FALSE;
   /* Felt: Indhold: Sted Adresse */
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['id'] = 'field_os2web_contact_field_addres';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['table'] = 'field_data_field_os2web_contact_field_addres';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['field'] = 'field_os2web_contact_field_addres';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['label'] = '';
-  $handler->display->display_options['fields']['field_os2web_contact_field_addres']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['id'] = 'field_os2web_contact_field_addr';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['table'] = 'field_data_field_os2web_contact_field_addr';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['field'] = 'field_os2web_contact_field_addr';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['label'] = '';
+  $handler->display->display_options['fields']['field_os2web_contact_field_addr']['element_label_colon'] = FALSE;
   /* Felt: Indhold: Sted Postnr */
   $handler->display->display_options['fields']['field_os2web_contact_field_zip']['id'] = 'field_os2web_contact_field_zip';
   $handler->display->display_options['fields']['field_os2web_contact_field_zip']['table'] = 'field_data_field_os2web_contact_field_zip';
@@ -644,7 +644,7 @@ return os2web_contact_get_block();
     'edit_node' => 'edit_node',
     'title' => 0,
     'field_os2web_contact_field_dept' => 0,
-    'field_os2web_contact_field_addres' => 0,
+    'field_os2web_contact_field_addr' => 0,
     'field_os2web_contact_field_zip' => 0,
     'field_os2web_contact_field_info' => 0,
     'field_os2web_contact_field_email' => 0,

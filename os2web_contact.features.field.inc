@@ -1711,14 +1711,14 @@ function os2web_contact_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-os2web_contact_contact-field_os2web_contact_field_addres'.
-  $fields['node-os2web_contact_contact-field_os2web_contact_field_addres'] = array(
+  // Exported field: 'node-os2web_contact_contact-field_os2web_contact_field_addr'.
+  $fields['node-os2web_contact_contact-field_os2web_contact_field_addr'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_os2web_contact_field_addres',
+      'field_name' => 'field_os2web_contact_field_addr',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1767,7 +1767,7 @@ function os2web_contact_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_os2web_contact_field_addres',
+      'field_name' => 'field_os2web_contact_field_addr',
       'label' => 'Adresse',
       'required' => 0,
       'settings' => array(
