@@ -13,14 +13,14 @@ function os2web_contact_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'os2web_contact_group_opening|node|os2web_contact_contact|form';
-  $field_group->group_name = 'os2web_contact_group_opening';
+  $field_group->identifier = 'group_os2web_contact_group_opening|node|os2web_contact_contact|form';
+  $field_group->group_name = 'group_os2web_contact_group_opening';
   $field_group->entity_type = 'node';
   $field_group->bundle = 'os2web_contact_contact';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = '';
-  $export['os2web_contact_group_opening|node|os2web_contact_contact|form'] = $field_group;
+  $export['group_os2web_contact_group_opening|node|os2web_contact_contact|form'] = $field_group;
 
   return $export;
 }
