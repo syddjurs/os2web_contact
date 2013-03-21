@@ -22,7 +22,7 @@ function os2web_contact_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '8',
         ),
         'workbench_access' => array(
           'weight' => '8',
