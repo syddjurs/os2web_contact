@@ -36,23 +36,14 @@ function os2web_contact_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
-    $pane->type = 'views';
-    $pane->subtype = 'os2web_contact_view_contact';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'os2web_contact_view_contact-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '1',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '2209',
-      'url' => '',
-      'display' => 'block',
+      'arguments' => array(
+        'nid' => '',
+      ),
       'override_title' => 0,
       'override_title_text' => '',
     );
@@ -69,16 +60,17 @@ function os2web_contact_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'os2web_contact_view_contact-panel_pane_1';
-    $pane->shown = FALSE;
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'arguments' => array(
-        'nid' => '',
-      ),
-      'override_title' => 0,
-      'override_title_text' => '',
+      'admin_title' => 'Tekstblok',
+      'title' => '<none>',
+      'body' => '<p>Hej</p>
+',
+      'format' => 'full_html',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -93,16 +85,25 @@ function os2web_contact_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-3';
     $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
+    $pane->type = 'views';
+    $pane->subtype = 'os2web_spotbox_view_spot';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => 'Tekstblok',
-      'title' => '<none>',
-      'body' => '',
-      'format' => 'full_html',
-      'substitute' => TRUE,
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block_1',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -117,16 +118,24 @@ function os2web_contact_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-4';
     $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'os2web_spotbox_box-panel_pane_10';
+    $pane->type = 'views';
+    $pane->subtype = 'os2web_base_panels_view_selfserv';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'items_per_page' => '1',
-      'arguments' => array(
-        'nid' => '',
-      ),
-      'override_title' => 1,
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block_6',
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -140,7 +149,7 @@ function os2web_contact_default_panels_mini() {
     $display->content['new-4'] = $pane;
     $display->panels['middle'][3] = 'new-4';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-2';
+  $display->title_pane = 'new-1';
   $mini->display = $display;
   $export['os2web_contact_panel_sidebar'] = $mini;
 
