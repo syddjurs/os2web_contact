@@ -76,7 +76,6 @@ features[field_instance][] = node-os2web_contact_contact-field_os2web_contact_fi
 features[field_instance][] = node-os2web_contact_contact-field_os2web_contact_field_wedcl
 features[field_instance][] = node-os2web_contact_contact-field_os2web_contact_field_wedop
 features[field_instance][] = node-os2web_contact_contact-field_os2web_contact_field_zip
-features[filter][] = os2web_contact_contact_format
 features[node][] = os2web_contact_contact
 features[panels_mini][] = os2web_contact_panel_sidebar
 features[user_permission][] = create os2web_contact_contact content
