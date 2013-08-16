@@ -16,16 +16,24 @@ function os2web_contact_get_block() {
   $menu = menu_get_active_trail();
   while ($item = array_pop($menu)) {
     $path = explode('/', $item['link_path']);
+    if((isset($path[1]) && $path[1] == 'add') || (isset($path[2]) && $path[2] == 'edit') ) {
+      continue;
+    }
     if ($path[0] === 'taxonomy' && $path[1] === 'term') {
       $ent = taxonomy_term_load($path[2]);
       $field = field_get_items('taxonomy_term', $ent, 'field_os2web_base_field_contact');
     }
     elseif ($path[0] === 'node') {
-      $ent = node_load($path[1]);
-      $field = field_get_items('node', $ent, 'field_os2web_base_field_contact');
+      if (isset($path[1]) && is_numeric($path[1])) {
+        $ent = node_load($path[1]);
+        $field = field_get_items('node', $ent, 'field_os2web_base_field_contact');
+      }
     }
     else {
-      // Unknown entity type.. Possibly root.
+      $node = menu_get_object();
+      if($node) {
+        $field = field_get_items('node', $node,'field_os2web_base_field_contact');
+      }
     }
     if (isset($field[0]['nid'])) {
       $result = $field[0]['nid'];

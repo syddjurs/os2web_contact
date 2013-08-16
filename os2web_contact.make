@@ -19,8 +19,8 @@ core = 7.x
 
 ; Basic
 
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.3"
+# projects[ctools][subdir] = "contrib"
+# projects[ctools][version] = "1.3"
 
 projects[features][subdir] = "contrib"
 projects[features][version] = "2.0-beta2"

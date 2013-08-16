@@ -38,7 +38,7 @@ function os2web_contact_default_panels_mini() {
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
     $pane->subtype = 'os2web_contact_view_contact-panel_pane_1';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'arguments' => array(
@@ -60,17 +60,25 @@ function os2web_contact_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
+    $pane->type = 'views';
+    $pane->subtype = 'os2web_contact_view_contact';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => 'Tekstblok',
-      'title' => '<none>',
-      'body' => '<p>Hej</p>
-',
-      'format' => 'full_html',
-      'substitute' => TRUE,
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '1',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
