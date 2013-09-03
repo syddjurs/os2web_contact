@@ -622,7 +622,7 @@ return os2web_contact_get_block();
 
 <p>Borgerservice i Hornslet og Ebeltoft har lukket fredag.</p>
 
-<p>Du kan få hjælp til selvbetjening på bibliotekerne. Besøg bibliotekets hjemmeside <a href="http://bibliotek.syddjurs.dk">her</a></p>';
+<p>Du kan få hjælp til selvbetjening på bibliotekerne. <a href="http://bibliotek.syddjurs.dk">Besøg bibliotekets hjemmeside her</a></p>';
   $handler->display->display_options['fields']['field_os2web_contact_field_callc']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_os2web_contact_field_callc']['element_label_class'] = 'kontaktblok-indhold';
   $handler->display->display_options['fields']['field_os2web_contact_field_callc']['element_label_colon'] = FALSE;
