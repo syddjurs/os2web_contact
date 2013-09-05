@@ -74,7 +74,7 @@ function os2web_contact_default_panels_mini() {
       'feed_icons' => 0,
       'panel_args' => 0,
       'link_to_view' => 0,
-      'args' => '',
+      'args' => '290807',
       'url' => '',
       'display' => 'block',
       'override_title' => 0,

@@ -17,14 +17,6 @@ function os2web_contact_context_default_contexts() {
   $context->description = 'Visning af bla. kontaktblok i højre sidebar på udvalgte sider';
   $context->tag = 'OS2WEB - Generelt';
   $context->conditions = array(
-    'node' => array(
-      'values' => array(
-        'os2web_base_contentpage' => 'os2web_base_contentpage',
-      ),
-      'options' => array(
-        'node_form' => '1',
-      ),
-    ),
     'path' => array(
       'values' => array(
         'selvbetjening' => 'selvbetjening',
@@ -43,9 +35,6 @@ function os2web_contact_context_default_contexts() {
           'weight' => '-10',
         ),
       ),
-    ),
-    'delta' => array(
-      'delta_template' => 'standard',
     ),
   );
   $context->condition_mode = 0;
