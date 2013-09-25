@@ -20,7 +20,7 @@ function os2web_contact_context_default_contexts() {
     'path' => array(
       'values' => array(
         'selvbetjening' => 'selvbetjening',
-        'nyheder' => 'nyheder',
+        'nyheder*' => 'nyheder*',
         'dagsorden-og-referat' => 'dagsorden-og-referat',
       ),
     ),
