@@ -44,6 +44,25 @@ function os2web_contact_get_block() {
 }
 
 /**
+ * Implements hook_views_post_render().
+ */
+function os2web_contact_views_post_render(&$view, &$output, &$cache) {
+  global $user;
+
+  if ($view->name = 'os2web_contact_view_contact' && $view->human_name === 'Kontaktblok') {
+    // Check if the user has the 'editor' role.
+    // Add an edit link.
+    if (in_array('Editor', $user->roles) && $nid = os2web_contact_get_block()) {
+      $output = l(t('Edit'), 'node/' . $nid . '/edit', array(
+        'attributes' => array(
+          'class' => array('edit-link'),
+          'style' => 'position: absolute;top: 20px;right: 0;',
+        ),
+      )) . $output;
+    }
+  }
+}
+/**
  * Implements hook_os2web_help().
  */
 function os2web_contact_os2web_help($sections) {
